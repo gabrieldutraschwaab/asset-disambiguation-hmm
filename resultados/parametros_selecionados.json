@@ -1,0 +1,36 @@
+{
+  "escala_transicao_m": 2.0,
+  "cobertura_minima_validacao": 0.8,
+  "espacial": {
+    "limiar_confianca": 0.6,
+    "limiar_separacao": 0.25
+  },
+  "forward": {
+    "limiar_confianca": 0.8,
+    "limiar_separacao": 0.0
+  },
+  "fatores_ruido": [
+    0.5,
+    0.75,
+    1.0,
+    1.25,
+    1.5,
+    2.0
+  ],
+  "rotas_primarias": [
+    "circuito_horario",
+    "circuito_antihorario"
+  ],
+  "rotas_estresse": [
+    "troca_central_longa",
+    "inspecao_com_saltos"
+  ],
+  "sementes_validacao": {
+    "inicio": 1000,
+    "fim_inclusivo": 1199
+  },
+  "sementes_teste": {
+    "inicio": 10000,
+    "fim_inclusivo": 10999
+  }
+}
