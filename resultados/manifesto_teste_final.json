@@ -1,0 +1,79 @@
+{
+  "arquivo_resultados": "resultados_teste.csv.gz",
+  "sha256_resultados": "b411865b3082bce9d9989a55685634a11c5c5e7e507a34e626fb4f421ecff79e",
+  "tamanho_bytes": 5464545,
+  "quantidade_linhas": 144000,
+  "sementes": {
+    "inicio": 10000,
+    "fim_inclusivo": 10999,
+    "quantidade": 1000
+  },
+  "escala_transicao_m": 2.0,
+  "fatores_ruido": [
+    0.5,
+    0.75,
+    1.0,
+    1.25,
+    1.5,
+    2.0
+  ],
+  "rotas_primarias": [
+    "circuito_horario",
+    "circuito_antihorario"
+  ],
+  "rotas_estresse": [
+    "troca_central_longa",
+    "inspecao_com_saltos"
+  ],
+  "limiares": {
+    "espacial": {
+      "limiar_confianca": 0.6,
+      "limiar_separacao": 0.25
+    },
+    "forward": {
+      "limiar_confianca": 0.8,
+      "limiar_separacao": 0.0
+    }
+  },
+  "bootstrap": {
+    "quantidade_reamostragens": 10000,
+    "semente_acuracia": 20260906,
+    "semente_abstencao": 20260907,
+    "unidade_reamostrada": "semente completa"
+  },
+  "arquivos_resumo": [
+    "resumo_acuracias_teste.csv",
+    "resumo_acuracias_por_rota_ruido_teste.csv",
+    "resumo_abstencao_teste.csv",
+    "comparacao_abstencao_teste.csv",
+    "intervalos_acuracia_primarias_teste.csv",
+    "intervalos_abstencao_primarias_teste.csv",
+    "resumo_abstencao_por_rota_ruido_teste.csv",
+    "resumo_abstencao_primarias_por_ruido_teste.csv"
+  ],
+  "arquivos_figuras": [
+    "figuras/acuracia_rotas_primarias_teste.png",
+    "figuras/acuracia_rotas_primarias_teste.svg",
+    "figuras/abstencao_rotas_primarias_teste.png",
+    "figuras/abstencao_rotas_primarias_teste.svg",
+    "figuras/ganhos_por_rota_teste.png",
+    "figuras/ganhos_por_rota_teste.svg"
+  ],
+  "sha256_artefatos": {
+    "resultados_teste.csv.gz": "b411865b3082bce9d9989a55685634a11c5c5e7e507a34e626fb4f421ecff79e",
+    "resumo_acuracias_teste.csv": "5f72246e1af669bdd31f5a30a14a9ab627c89b36ee2cc38a63d62c66b5c0bbe6",
+    "resumo_acuracias_por_rota_ruido_teste.csv": "c66b9cb0729997b0bf68915bef88a5cb8f6cec176ca32e2c1a95f466b56b66d9",
+    "resumo_abstencao_teste.csv": "e4714bf1219e8751790e57741490fc2ef40719c176d118906cf30b0534fa3a20",
+    "comparacao_abstencao_teste.csv": "a33ccc6f16d46f6ed29a3167158adec2e2af30eb2374ff6f95f384b867f2b1e3",
+    "intervalos_acuracia_primarias_teste.csv": "a1202a3b751d779c828119a8fe2111da24d87c21283b17a6e6d3dca5dfa4630f",
+    "intervalos_abstencao_primarias_teste.csv": "683bac203a3ccceafc9cbf9ca1806eab829cc3c70e9b7c7c9aed4c615b9449dd",
+    "resumo_abstencao_por_rota_ruido_teste.csv": "4036d51d569c48ad273d6ff141266462c51334421e95f4a336164f2698b18d40",
+    "resumo_abstencao_primarias_por_ruido_teste.csv": "a892c173f6f01cfbd7879568156889734387226aa20e37b8cd8fcbad56996c9f",
+    "figuras/acuracia_rotas_primarias_teste.png": "3a329f0ccecb0a5c2b7db7d57495e7ba3c7774b0d8d6d7ae3234082970e75b24",
+    "figuras/acuracia_rotas_primarias_teste.svg": "0926327e31ae3a9df5821ecb73a0d8df8be065470d613ca248d44525ee0089c9",
+    "figuras/abstencao_rotas_primarias_teste.png": "12b8cddfb9687dd342b361cf85d7664ee0bd936a825ea243f3a9e1d1b34cbb77",
+    "figuras/abstencao_rotas_primarias_teste.svg": "0979db546522fc75494ecdad7a1debfef18e851444513f5c122dc80a7e6cf3f7",
+    "figuras/ganhos_por_rota_teste.png": "d13e78a6de5bfdae8eb8f41f3357e399d34ee64e48f4a8fd754dff34faacf9cd",
+    "figuras/ganhos_por_rota_teste.svg": "ce6b831063befca1f371f1da080c3164893470a2966f97a9abc2a690dcacb2dc"
+  }
+}
