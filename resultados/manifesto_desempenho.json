@@ -1,0 +1,75 @@
+{
+  "versao_esquema": 1,
+  "gerado_em_utc": "2026-09-07T03:58:23.252431+00:00",
+  "implementacao": {
+    "notebook_base": "notebooks/01_cenario_sintetico.ipynb",
+    "commit_base": "099ba99da5954a755afbe6b53971265a0ba46f3a",
+    "sha256_fontes_notebook_base": "49c2cc56777768f7078d1c070bb9ad221626a4e9bda2623820d89d80da4dbd62"
+  },
+  "configuracao": {
+    "rotas": [
+      "circuito_horario",
+      "circuito_antihorario",
+      "troca_central_longa",
+      "inspecao_com_saltos"
+    ],
+    "fatores_ruido": [
+      0.5,
+      0.75,
+      1.0,
+      1.25,
+      1.5,
+      2.0
+    ],
+    "sementes": {
+      "inicio": 10000,
+      "fim_inclusivo": 10999,
+      "quantidade": 1000
+    },
+    "quantidade_sequencias": 24000,
+    "quantidade_observacoes": 144000,
+    "quantidade_medicoes": 120000,
+    "escala_transicao_m": 2.0,
+    "limiares": {
+      "espacial": {
+        "limiar_confianca": 0.6,
+        "limiar_separacao": 0.25
+      },
+      "forward": {
+        "limiar_confianca": 0.8,
+        "limiar_separacao": 0.0
+      }
+    },
+    "semente_ordem_metodos": 20260908
+  },
+  "medicao": {
+    "relogio": "time.perf_counter_ns",
+    "aquecimentos_por_pipeline": 10,
+    "ordem_metodos_aleatorizada": true,
+    "gc_desativado_durante_medicao": true,
+    "simulacao_incluida": false,
+    "matriz_transicao_incluida": false,
+    "leitura_escrita_arquivos_incluida": false,
+    "unidade_cronometrada": "sequencia completa de seis observacoes",
+    "viterbi_com_abstencao": false
+  },
+  "ambiente": {
+    "gerado_em_utc": "2026-09-07T03:48:40.980155+00:00",
+    "plataforma": "Linux-6.12.107+deb13-amd64-x86_64-with-glibc2.41",
+    "processador": "13th Gen Intel(R) Core(TM) i7-13620H",
+    "nucleos_logicos": 16,
+    "python": "3.13.5",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "networkx": "3.6.1",
+    "commit_base": "099ba99da5954a755afbe6b53971265a0ba46f3a",
+    "sha256_fontes_notebook_base": "49c2cc56777768f7078d1c070bb9ad221626a4e9bda2623820d89d80da4dbd62"
+  },
+  "tempo_total_benchmark_s": 578.6314718579997,
+  "sha256_artefatos": {
+    "resultados/latencias_metodos_teste.csv.gz": "71c5b4ba8a8b98adc010e65e67fe15abc6a30a36226c8c758baf42ac38ea0e86",
+    "resultados/resumo_latencias_metodos_teste.csv": "22c87abed3558bd40a0b9d84118ea86d8beb44ae798239078cb6daa5d0570b14",
+    "resultados/resumo_latencias_por_condicao_teste.csv": "0a989e8f1ddaac9dc18a18c80be7a045f0adbb0aeca9033134521d8e48bb065d",
+    "resultados/ambiente_desempenho.json": "169618054f7a8257fa2f04fa8003e2e8bf1d075d3b85af2f47cafe1faf0e72a3"
+  }
+}

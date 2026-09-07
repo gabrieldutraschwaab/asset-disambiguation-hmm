@@ -1,0 +1,12 @@
+{
+  "gerado_em_utc": "2026-09-07T03:48:40.980155+00:00",
+  "plataforma": "Linux-6.12.107+deb13-amd64-x86_64-with-glibc2.41",
+  "processador": "13th Gen Intel(R) Core(TM) i7-13620H",
+  "nucleos_logicos": 16,
+  "python": "3.13.5",
+  "numpy": "2.5.2",
+  "pandas": "3.0.5",
+  "networkx": "3.6.1",
+  "commit_base": "099ba99da5954a755afbe6b53971265a0ba46f3a",
+  "sha256_fontes_notebook_base": "49c2cc56777768f7078d1c070bb9ad221626a4e9bda2623820d89d80da4dbd62"
+}
