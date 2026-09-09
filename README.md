@@ -7,7 +7,6 @@ Neste repositório foi implementada e avaliada a etapa de desambiguação sequen
 
 Avaliar, sob níveis controlados de incerteza posicional, se a associação sequencial baseada em HMM reduz identificações incorretas em comparação com uma associação espacial independente.
 
-O experimento atual é inteiramente sintético. Ele avalia a camada de desambiguação sequencial da arquitetura, não os componentes anteriores de percepção ou localização.
 
 ## Métodos comparados
 
@@ -16,7 +15,7 @@ O experimento atual é inteiramente sintético. Ele avalia a camada de desambigu
 * **Viterbi:** encontra a sequência global de estados mais provável.
 * **Abstenção:** suspende a identificação quando a confiança ou a separação entre candidatos não satisfaz os limiares fixados na validação.
 
-Os estados de identidade do HMM são exclusivamente as seis válvulas `V1` a `V6`. Os pontos intermediários do grafo representam apenas caminhos de movimentação e não são candidatos de identidade.
+Os estados de identidade do HMM são exclusivamente as seis válvulas V1 a V6. Os pontos intermediários do grafo representam apenas caminhos de movimentação e não são candidatos de identidade. As probabilidades de emissão são calculadas a partir da distância de Mahalanobis entre a posição observada e a posição cadastrada de cada válvula, considerando a incerteza da observação. O prior de movimentação é obtido a partir do grafo, atribuindo maior probabilidade às transições realizadas por trajetos mais curtos.
 
 ## Cenário sintético
 
@@ -66,8 +65,8 @@ Os conjuntos de validação e teste não compartilham sementes.
 
 Nas rotas primárias, o bootstrap pareado por semente produziu:
 
-* Forward: ganho de **8,9500 pp**, IC95% de **8,4583 a 9,4361 pp**;
-* Viterbi: ganho de **14,1056 pp**, IC95% de **13,5611 a 14,6250 pp**.
+* Forward: ganho de 8,95 p.p., com IC 95% de 8,46 a 9,44 p.p.;
+* Viterbi: ganho de 14,11 p.p., com IC 95% de 13,56 a 14,63 p.p.
 
 ### Operação com abstenção nas rotas primárias
 
@@ -78,10 +77,10 @@ Nas rotas primárias, o bootstrap pareado por semente produziu:
 
 Com os limiares definidos na validação, o Forward apresentou:
 
-* redução de cobertura de **1,6681 pp**, IC95% de **1,2722 a 2,0625 pp**;
-* ganho de acurácia seletiva de **9,5393 pp**, IC95% de **9,0690 a 10,0146 pp**;
-* redução absoluta de identificações incorretas de **7,9556 pp**, IC95% de **7,5556 a 8,3598 pp**;
-* redução relativa de identificações incorretas de **78,0169%**, IC95% de **75,0755% a 80,8238%**.
+* redução de cobertura de 1,67 p.p., com IC 95% de 1,27 a 2,06 p.p.;
+* ganho de acurácia seletiva de 9,54 p.p., com IC 95% de 9,07 a 10,01 p.p.;
+* redução absoluta de identificações incorretas de 7,96 p.p., com IC 95% de 7,56 a 8,36 p.p.;
+* redução relativa de identificações incorretas de 78,02%, com IC 95% de 75,08% a 80,82%.
 
 ## Interpretação
 
