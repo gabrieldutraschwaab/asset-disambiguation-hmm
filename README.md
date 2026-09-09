@@ -1,6 +1,7 @@
 # Desambiguação sequencial de ativos com HMM
 
 Protótipo experimental para desambiguar ativos industriais visualmente idênticos combinando observações posicionais, um grafo de movimentação e modelos ocultos de Markov (HMM).
+Neste repositório foi implementada e avaliada a etapa de desambiguação sequencial da arquitetura proposta. As etapas anteriores de percepção, estimação de profundidade e localização não foram implementadas. Para testar o HMM, foram utilizadas posições cadastradas de seis válvulas e observações geradas pela adição de erros aleatórios de localização. As 144 mil observações resultam da combinação de quatro rotas, seis níveis de ruído, mil repetições por condição e seis ativos por trajetória.
 
 ## Objetivo
 
